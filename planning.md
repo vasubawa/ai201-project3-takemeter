@@ -69,3 +69,9 @@ I used an LLM to help rapidly expand my dataset from authentic Reddit comments t
 
 **Failure analysis:**
 Once I extract the wrong predictions from the Colab evaluation script, I will feed them into an LLM and ask it to identify underlying patterns in the errors.
+
+---
+
+## Baseline Reflection
+**Hypothesis before fine-tuning:**
+The zero-shot baseline will likely perform well at identifying structural `analysis` due to the clear vocabulary, but it may struggle on the boundary between a `hot_take` and an angry `reaction`. Without community-specific context, a massive LLM might classify a highly sarcastic or hyperbolic one-liner purely as emotional anger (`reaction`) rather than recognizing it as a sweeping, unsupported claim (`hot_take`).
