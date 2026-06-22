@@ -60,11 +60,10 @@ The zero-shot baseline was Groq's `llama-3.3-70b-versatile`. The model was promp
 ### Sample Classifications
 | Text | True Label | Predicted Label | Confidence |
 | :--- | :--- | :--- | :--- |
-| "The input delay makes the final boss mechanically unfair, not just 'hard'." | `analysis` | `analysis` | 91% |
-| "Xbox is completely dead as a console manufacturer." | `hot_take` | `hot_take` | 88% |
-| "RIP to my wallet this fall, too many good games coming out." | `reaction` | `reaction` | 94% |
-
-*Correct Example Explained*: The model correctly predicted `analysis` for the first post because it recognized structural argument markers ("makes X mechanically Y, not just Z") rather than relying purely on keywords.
+| "The input delay makes the final boss mechanically unfair, not just 'hard'." | `analysis` | `analysis` | 59% |
+| "Xbox is completely dead as a console manufacturer." | `hot_take` | `analysis` | 41% |
+| "RIP to my wallet this fall, too many good games coming out." | `reaction` | `reaction` | 49% |
+| "Wait, so they actually removed the weapon durability system entirely?" | `reaction` | `reaction` | 36% |
 
 ## Reflection
 
